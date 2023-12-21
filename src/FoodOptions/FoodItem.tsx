@@ -1,8 +1,8 @@
-const FoodItem = ({ foodItem, handleBuyButton}) => {
+const FoodItem = ({ foodItem, handleBuyButton, bought}) => {
 
-return <li className="list-group-item">{foodItem}
+return <li className={`list-group-item ${bought && "active"}`}>{foodItem}
   <button type="button" className="btn btn-info float-end"
-  onClick={handleBuyButton}>Buy {foodItem}</button>
+  onClick={handleBuyButton}>Buy</button>
   </li>;
 };
 

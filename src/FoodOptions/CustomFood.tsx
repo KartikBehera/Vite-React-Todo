@@ -1,7 +1,7 @@
-let CustomFood = ({onTextChange}) =>{
+let CustomFood = ({handleOnKeyDown}) =>{
     
 return <input type="text" placeholder="Enter food description!"
-    onChange={onTextChange}/>
+    onKeyDown={handleOnKeyDown}/>
 }
 
 export default CustomFood;
