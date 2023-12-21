@@ -1,4 +1,6 @@
-function TodoItem({ items }) {
+function TodoItem({ items, onDeleteAction}) {
+
+ 
   return (
     <div className="container">
       {items.map((item) => (
@@ -6,7 +8,7 @@ function TodoItem({ items }) {
           <div className="col-5">{item.Name}</div>
           <div className="col-5">{item.DueDate}</div>
           <div className="col-2">
-            <button type="button" className="btn btn-danger">
+            <button type="button" className="btn btn-danger" onClick={onDeleteAction}>
               Delete
             </button>
           </div>

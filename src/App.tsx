@@ -5,10 +5,10 @@ import FoodMenu from './FoodOptions/FoodMenu';
 function App() {
   return (
     <center className="todo-container">
-      <ToDoComponent />
+      {/* <ToDoComponent />
       <hr />
       <BharatClock />
-      <hr />
+      <hr /> */}
       <FoodMenu />
     </center>
   );

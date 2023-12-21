@@ -9,13 +9,16 @@ function ToDoComponent() {
     { Name: 'Insurance Due', DueDate: '18/01/2024' },
     { Name: 'Pay Credit Card bill', DueDate: '05/01/2024' },
   ];
+  const onDeleteAction =(event)=>{
+    return console.log({event});
+  }
 
   return (
     <>
       <AppName />
       <AddTodo />
       <div className="item-container">
-        <TodoItem items={todoItems} />
+        <TodoItem items={todoItems} onDeleteAction={onDeleteAction}/>
       </div>
     </>
   );
